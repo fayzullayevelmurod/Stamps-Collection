@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header start -->
+    <header>
+        <!-- Header top start -->
+        <div class="top">
+            <div class="main_container">
+                <div class="header_top d-flex align-items-center justify-content-between">
+                    <div class="left d-flex align-items-center">
+                        <a href="/index.html" class="text-decoration-none">Главная</a>
+                        <a href="/index.html" class="text-decoration-none">Статьи</a>
+                        <a href="/index.html" class="text-decoration-none">Помощь по проекту</a>
+                        <div class="search">
+                            <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
+                            <button>
+                                <img src="./images/search.svg" alt="search">
+                            </button>
+                        </div>
+                        <button class="filter d-none d-lg-flex">
+                            <span>Фильтр</span>
+                            <img src="./images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="m-0 d-flex align-items-center justify-content-between">
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/message.svg" alt="">
+                                <span>Обратная связь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/header_star.svg" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/user.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header top end -->
+
+        <!-- Header bottom start -->
+        <div class="bottom">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
+                <div class="search">
+                    <input type="text">
+                    <button>
+                        <img src="./images/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/globus.svg" alt="globus">
+                        Страны и регионы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/calendar.svg" alt="globus">
+                        годы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/receta.svg" alt="globus">
+                        темы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/book.svg" alt="globus">
+                        альбомы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <a class="head_link head_link_active d-none d-xl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/crown.svg" alt="">
+                    Золотой пантеон
+                </a>
+                <a class="head_link d-none d-xxl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/statistic_up.svg" alt="">
+                    Статистика коллекции
+                </a>
+                <div class="dropdown last_dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/bars.svg" alt="globus">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Header bottom end -->
+
+        <nav class="navbarp-0">
+            <div class="container-fluid">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Header end -->
+    
+    <div class="main_container row">
+        <div class="nav_list col-12">
+            <a href="index.html">Главная</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">Регистрация/Вход</a>
+        </div>
+    </div>
+    <div class="registration position-relative">
+        <div class="main_container row">
+            <div class="registration_wrapper d-flex col-12">
+                <div class="registration_left d-flex">
+                    <img class="position-absolute" src="./images/registration_left_img.png" alt="">
+                    <div class="registration_red_block position-absolute"></div>
+                </div>
+                <div class="registration_main">
+                    <h2>Создайте аккаунт</h2>
+                    <p>Ваши сеансы на сайте станут ещё удобнее. Создайте личный кабинет с избранной коллекцией, возможностью комментирования и другими функциями.</p>
+                    <a class="form_full_btn" href="#">Уже есть аккаунт? Войти <img src="./images/albums_comment_full.svg" alt=""></a>
+                    <form>
+                        <div class="form_input_wrapper d-flex justify-content-between">
+                            <div class="form_left">
+                                <div class="form_input_in overflow-hidden shadow-none d-flex align-items-center">
+                                    <input type="text" id="disabledTextInput" class="form-control w-100" placeholder="Ваше имя">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input  type="text" id="disabledTextInput" class="form-control w-100" placeholder="Логин (ваше имя на сайте)">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="password" class="form-control w-100" id="exampleInputPassword1" placeholder="Придумайте пароль">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="password" class="form-control w-100" id="exampleInputPassword1" placeholder="Подтвердите пароль">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="form_right">
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input  type="text" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Дата рождения">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="number" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Телефон">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="email" class="form-control w-100 border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                    <img src="./images/star_icon.svg" alt="">
+                                </div>
+                                <div class="form_input_in overflow-hidden d-flex align-items-center">
+                                    <input type="text" id="disabledTextInput" class="form-control w-100 border-0" placeholder="Страна проживания">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_agreement d-flex align-items-center">
+                            <input role="button" type="checkbox" id="exampleCheck1">
+                            <p class="form_agreement_text">Я ознакомлен с Политикой конфиденциальности и обработки персональных данных</p>
+                        </div>
+                        <span class="d-block"><img src="./images/star_icon.svg" alt="">Обязательные поля</span>
+                        <button class="form_btn d-block border-0" type="submit" role="button">Зарегистироваться</button>
+                        <p class="form_bottom_text">Ваши данные не передаются третьим лицам, они нужны только для создания аккаунта.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- footer start -->
+    <footer>
+        <div class="main_container">
+            <div class="footer_wrapper">
+                <a class="footer_logo text-decoration-none" href="index.html">
+                    <img src="./images/footer_logo.svg" alt="">
+                </a>
+                <ul class="pt-3">
+                    <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                    <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                    <li><a class="text-decoration-none" href="#">Новости</a></li>
+                    <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                    <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_menu">Найти марки:</li>
+                    <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                    <li><a class="text-decoration-none" href="#">по годам</a></li>
+                    <li><a class="text-decoration-none" href="#">по темам</a></li>
+                    <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                </ul>
+                <div class="footer_social">
+                    <p class="footer_text">Подпишитесь на новости коллекции и интересную информацию</p>
+                    <form>
+                        <div class="form_in">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </div>
+                    </form>
+                    <div class="footer_social_in">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                        <div class="footer_social_email">
+                            <p>По всем вопросам</p>
+                            <a class="text-decoration-none" href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+            <div class="footer_wrapper_media">
+                <div class="footer_top_media">
+                    <a class="text-decoration-none" href="index.html">
+                        <img src="./images/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer_email">
+                        <p>Подпишитесь на новости коллекции и интересную информацию</p>
+                        <div class="email_wrapper">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button class="footer_media_btn" type="submit">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_center_media">
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                        <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                        <li><a class="text-decoration-none" href="#">Новости</a></li>
+                        <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                        <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_menu_media">Найти марки:</li>
+                        <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                        <li><a class="text-decoration-none" href="#">по годам</a></li>
+                        <li><a class="text-decoration-none" href="#">по темам</a></li>
+                        <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_media">
+                    <div class="social_media_footer">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                    </div>
+                    <div class="footer_social_email_media">
+                        <p class="footer_media_text">По всем вопросам</p>
+                        <a class="text-decoration-none" href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                    </div>
+                </div>
+                <p class="footer_media_bottom_in">© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

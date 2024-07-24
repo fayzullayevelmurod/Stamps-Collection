@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- swipper file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header start -->
+    <header>
+        <!-- Header top start -->
+        <div class="top">
+            <div class="main_container">
+                <div class="header_top d-flex align-items-center justify-content-between">
+                    <div class="left d-flex align-items-center">
+                        <a href="/index.html" class="text-decoration-none">Главная</a>
+                        <a href="/index.html" class="text-decoration-none">Статьи</a>
+                        <a href="/index.html" class="text-decoration-none">Помощь по проекту</a>
+                        <div class="search">
+                            <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
+                            <button>
+                                <img src="./images/search.svg" alt="search">
+                            </button>
+                        </div>
+                        <button class="filter d-none d-lg-flex">
+                            <span>Фильтр</span>
+                            <img src="./images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="m-0 d-flex align-items-center justify-content-between">
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/message.svg" alt="">
+                                <span>Обратная связь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/header_star.svg" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/user.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header top end -->
+
+        <!-- Header bottom start -->
+        <div class="bottom">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
+                <div class="search">
+                    <input type="text">
+                    <button>
+                        <img src="./images/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/globus.svg" alt="globus">
+                        Страны и регионы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/calendar.svg" alt="globus">
+                        годы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/receta.svg" alt="globus">
+                        темы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/book.svg" alt="globus">
+                        альбомы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <a class="head_link head_link_active d-none d-xl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/crown.svg" alt="">
+                    Золотой пантеон
+                </a>
+                <a class="head_link d-none d-xxl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/statistic_up.svg" alt="">
+                    Статистика коллекции
+                </a>
+                <div class="dropdown last_dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/bars.svg" alt="globus">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Header bottom end -->
+
+        <nav class="navbarp-0">
+            <div class="container-fluid">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Header end -->
+    
+    <div class="main_container row">
+        <div class="nav_list col-12">
+            <a href="index.html">Главная</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">Статистика коллекции</a>
+        </div>
+    </div>
+    <div class="statistics">
+        <div class="statistic_wrapper">
+            <div class="main_container row">
+                <div class="statistic_in col-12">
+                    <div class="statistic_left">
+                        <h4>Марок в коллекции:<span>158</span></h4>
+                        <h4>Оценочная стоимость:<span>8643$</span></h4>
+                        <h4>Альбомов:<span>5</span></h4>
+                    </div>
+                    <div class="statistic_right">
+                        <div class="statistic_text_right">
+                            <div class="statistic_text_right_in">
+                                <img src="./images/comment_award.svg" alt="">
+                                <h5>Самый активный пользователь:</h5>
+                            </div>
+                            <h6>Всего на сайте: 875 человек</h6>
+                        </div>
+                        <div class="statistic_img_right">
+                            <h3 class="statistic_icon1">За неделю <img src="./images/comment_person1.png" alt=""></h3>
+                            <h3 class="statistic_icon2">За Месяц <img src="./images/comment_person2.png" alt=""></h3>
+                            <h3 class="statistic_icon3">За Год <img src="./images/comment_person3.png" alt=""></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="statistic_cards">
+            <div class="main_container row">
+                <div class="statistic_cards_in col-12">
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card.png" alt="">
+                        <button class="statistic_btn">Самые дорогая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card2.png" alt="">
+                        <button class="statistic_btn">Самая старая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                    <div class="statistic_card">
+                        <img class="statistic_card_img" src="./images/statistic_card3.png" alt="">
+                        <button class="statistic_btn">Самая новая <img src="./images/statistic_play.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_container row">
+            <div class="statistic_brands col-12">
+                <h2 class="statistic_brands_title">Самые обсуждаемые марки:</h2>
+                <div class="statistic_brands_dropdowns">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary statistic_brands_dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            По стране <img src="./images/dropdown_icon.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another</a></li>
+                          <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary statistic_brands_dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Соединённые Штаты Америки <img src="./images/dropdown_icon.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another</a></li>
+                          <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="statistic_brands_slider">
+                    <h2 class="statistic_brands_slider_title">Самые обсуждаемые марки:</h2>
+                    <div class="statistic_brands_in">
+                        <div class="statistic_brands_slider">
+                            <button class="brand_prev_btn">
+                                <img src="./images/brands_slider_arrow.svg" alt="">
+                            </button>
+                            <div class="statistic_slider slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/brand_slider_img.png" alt="">
+                                        <h3>Джордж Вашингтон 1 cent, 1883г</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="brand_next_btn">
+                                <img src="./images/slider_brands_next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer start -->
+    <footer>
+        <div class="main_container">
+            <div class="footer_wrapper">
+                <a class="footer_logo text-decoration-none" href="index.html">
+                    <img src="./images/footer_logo.svg" alt="">
+                </a>
+                <ul class="pt-3">
+                    <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                    <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                    <li><a class="text-decoration-none" href="#">Новости</a></li>
+                    <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                    <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_menu">Найти марки:</li>
+                    <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                    <li><a class="text-decoration-none" href="#">по годам</a></li>
+                    <li><a class="text-decoration-none" href="#">по темам</a></li>
+                    <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                </ul>
+                <div class="footer_social">
+                    <p class="footer_text">Подпишитесь на новости коллекции и интересную информацию</p>
+                    <form>
+                        <div class="form_in">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </div>
+                    </form>
+                    <div class="footer_social_in">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                        <div class="footer_social_email">
+                            <p>По всем вопросам</p>
+                            <a class="text-decoration-none" href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+            <div class="footer_wrapper_media">
+                <div class="footer_top_media">
+                    <a class="text-decoration-none" href="index.html">
+                        <img src="./images/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer_email">
+                        <p>Подпишитесь на новости коллекции и интересную информацию</p>
+                        <div class="email_wrapper">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button class="footer_media_btn" type="submit">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_center_media">
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                        <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                        <li><a class="text-decoration-none" href="#">Новости</a></li>
+                        <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                        <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_menu_media">Найти марки:</li>
+                        <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                        <li><a class="text-decoration-none" href="#">по годам</a></li>
+                        <li><a class="text-decoration-none" href="#">по темам</a></li>
+                        <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_media">
+                    <div class="social_media_footer">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                    </div>
+                    <div class="footer_social_email_media">
+                        <p class="footer_media_text">По всем вопросам</p>
+                        <a class="text-decoration-none" href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                    </div>
+                </div>
+                <p class="footer_media_bottom_in">© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        let swiper_brand = new Swiper(".statistic_brands_slider .slider", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            navigation: {
+                nextEl: ".brand_next_btn",
+                prevEl: ".brand_prev_btn",
+            },
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

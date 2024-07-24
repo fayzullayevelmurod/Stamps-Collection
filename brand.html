@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header>
+        <!-- Header top start -->
+        <div class="top">
+            <div class="main_container">
+                <div class="header_top d-flex align-items-center justify-content-between">
+                    <div class="left d-flex align-items-center">
+                        <a href="/index.html" class="text-decoration-none">Главная</a>
+                        <a href="/index.html" class="text-decoration-none">Статьи</a>
+                        <a href="/index.html" class="text-decoration-none">Помощь по проекту</a>
+                        <div class="search">
+                            <input type="text" placeholder="Поиск. Например: Джордж Вашингтон">
+                            <button>
+                                <img src="./images/search.svg" alt="search">
+                            </button>
+                        </div>
+                        <button class="filter d-none d-lg-flex">
+                            <span>Фильтр</span>
+                            <img src="./images/filter.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="m-0 d-flex align-items-center justify-content-between">
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/message.svg" alt="">
+                                <span>Обратная связь</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/header_star.svg" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                                <img src="./images/user.svg" alt="">
+                                <span>Личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Header top end -->
+
+        <!-- Header bottom start -->
+        <div class="bottom">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <a class="logo" href="index.html">
+                    <img src="./images/Logo.svg" alt="Logotip">
+                </a>
+                <div class="search">
+                    <input type="text">
+                    <button>
+                        <img src="./images/search.svg" alt="search">
+                    </button>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/globus.svg" alt="globus">
+                        Страны и регионы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/calendar.svg" alt="globus">
+                        годы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-lg-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/receta.svg" alt="globus">
+                        темы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/book.svg" alt="globus">
+                        альбомы
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <a class="head_link head_link_active d-none d-xl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/crown.svg" alt="">
+                    Золотой пантеон
+                </a>
+                <a class="head_link d-none d-xxl-flex align-items-center text-decoration-none" href="#">
+                    <img src="./images/statistic_up.svg" alt="">
+                    Статистика коллекции
+                </a>
+                <div class="dropdown d-none d-xl-block">
+                    <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/bars.svg" alt="globus">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="./images/menu_bars.svg" role="button" class="bars" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- Header bottom end -->
+
+        <nav class="navbarp-0">
+            <div class="container-fluid">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Header end -->
+
+    <div class="main_container">
+        <div class="nav_list brand_nav_list">
+            <a href="#">Каталог </a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">По годам</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">1923г</a>
+            <img src="./images/next_icon.svg" alt="">
+            <a href="#">Джордж Вашингтон1</a>
+        </div>
+    </div>
+
+    <div class="brand">
+        <!-- Anons start -->
+        <section id="anons">
+            <div class="main_container">
+                <div class="head d-flex align-items-center justify-content-between">
+                    <div class="head_left">
+                        <h1>Джордж Вашингтон, 1732-1799</h1>
+                        <h3>Серия: <span>George Washington, 1732-1799</span></h3>
+                    </div>
+                    <div class="head_right">
+                        <p>Страна выпуска:</p>
+                        <div class="title">
+                            <img src="./images/flag_usa.svg" alt="">
+                            <span>Соединенные Штаты Америки</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content d-flex align-items-start justify-content-between">
+                    <div class="content_left d-flex align-items-start">
+                        <div class="anons_slider">
+                            <div class="swiper slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_1.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_2.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_3.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_4.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_5.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_1.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_2.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_3.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_4.svg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/anons_brand_5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next_button">
+                                <button class="bg-transparent border-0 btn-outline-none">
+                                    <img src="./images/anons_slider_next_icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="main_image">
+                            <div class="stike">
+                                <img src="./images/anons_brand_2.svg" alt="" class="select_brand_img">
+                                <img src="./images/stike.png" alt="" class="stile_img">
+                                <img src="/images/resize_icon.svg" class="resize_icon" role="button" alt="">
+                            </div>
+
+                            <!-- Mobile anons slider start -->
+                            <div class="mobile_anons_slider">
+                                <div class="swiper slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_1.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_2.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_3.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_4.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_5.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_1.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_2.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_3.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_4.svg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/anons_brand_5.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next_button">
+                                    <button class="btn-outline-none bg-transparent border-0">
+                                        <img src="./images/anons_slider_next_icon.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Mobile anons slider start -->
+
+                            <div class="foot d-flex align-items-center">
+                                <img src="./images/anons_brand_2.svg" alt="" class="left">
+                                <div class="text">
+                                    <a href="#" class="play">
+                                        Смотреть на видео
+                                        <img src="./images/play_icon.svg" alt="">
+                                    </a>
+                                    <a href="#" class="by_watch">Ссылка на Youtube</a>
+                                    <a href="#" class="by_watch">Ссылка на Rutube</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_right">
+                        <div class="description_head">
+                            <div class="item d-flex align-items-center justify-content-between">
+                                <div class="item_in d-flex align-items-center justify-content-between">
+                                    <div class="data">Альбом:</div>
+                                    <div class="value text-decoration-underline">Чёрный</div>
+                                </div>
+                                <div class="item_in d-flex align-items-center justify-content-between">
+                                    <div class="data">Клеммташе:</div>
+                                    <div class="value">2</div>
+                                </div>
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-between">
+                                <div class="item_in d-flex align-items-center justify-content-between">
+                                    <div class="data">Страница:</div>
+                                    <div class="value v-50 text-center">1</div>
+                                </div>
+                                <div class="item_in d-flex align-items-center justify-content-between">
+                                    <div class="data">Номер:</div>
+                                    <div class="value v-50 text-center">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1>Описание</h1>
+                        <p>Эта почтовая марка Соединенных Штатов Америки 1923 года - настоящий клад для коллекционеров и
+                            любителей истории. На ней изображен первый президент США Джордж Вашингтон, который стал
+                            символом свободы и независимости для американского народа. Надпись United States Postage над
+                            его портретом напоминает о важности почтовой службы, которая связывает людей и страны.
+                            Размеры марки ...</p>
+                        <a href="#" class="link">Развернуть описание</a>
+                        <div class="buy d-flex align-items-center justify-content-between">
+                            <div class="price">
+                                433 $
+                                <span>Рыночная стоимость</span>
+                            </div>
+                            <a href="#" role="button">
+                                Предложить сделку
+                                <img src="./images/buy_icon.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="main_comment">
+                            <div class="comment_wrapper d-flex align-items-center justify-content-between">
+                                <div class="comment">Комментарии (8)</div>
+                                <div class="comment_right d-flex align-items-center">
+                                    <div class="grade">Оценка (14)</div>
+                                    <img src="./images/comment_stars.svg" class="stars" alt="">
+                                    <div class="number">4,2</div>
+                                    <img src="./images/comment_big_star.svg" class="big_star" alt="">
+                                </div>
+                            </div>
+                            <div class="add_image">
+                                <button>
+                                    <img src="./images/red_star_icon.svg" alt="">
+                                    Добавить в избранное
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Anons start -->
+
+        <section class="img_modal">
+            <button class="close">&times;</button>
+            <img src="" alt="">
+        </section>
+
+        <!-- Characteristic start -->
+        <section id="characteristic">
+            <div class="characteristic_body">
+                <div class="main_container">
+                    <h1>Характеристики</h1>
+
+                    <div class="content d-flex align-items-start">
+                        <div class="datas d-flex flex-column">
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Год выпуска</div>
+                                <div class="value">1923г</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Месяц выпуска</div>
+                                <div class="value">—</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">День выпуска</div>
+                                <div class="value">—</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Гашение</div>
+                                <div class="value">+</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Состояние</div>
+                                <div class="value">XF</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Тема</div>
+                                <div class="value">Американские Президенты</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Номинал</div>
+                                <div class="value">2 цента</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Валюта</div>
+                                <div class="value">Цент</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Тираж</div>
+                                <div class="value">3000шт</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Форма марки</div>
+                                <div class="value">Прямоугольная</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Стоимость</div>
+                                <div class="value">~433$</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Высота</div>
+                                <div class="value">22.25мм</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Ширина</div>
+                                <div class="value">19.75мм</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Цвет</div>
+                                <div class="value active">Красный</div>
+                            </div>
+                            <div class="item d-flex align-item-end justify-content-between">
+                                <div class="border_bottom"></div>
+                                <div class="data">Текст</div>
+                                <div class="value">Washington, United States Postage</div>
+                            </div>
+                        </div>
+                        <div class="calculation">
+                            <h2>Оцените марку </h2>
+                            <div class="bnts_group">
+                                <button>
+                                    <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_35_1039)">
+                                            <path
+                                                d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                                fill="#F8F8F8" />
+                                            <path
+                                                d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                                stroke="#EFC351" stroke-width="0.861705" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                                height="60.5324" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="0.888268" />
+                                                <feGaussianBlur stdDeviation="3.10894" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_35_1039" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_35_1039" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_35_1039)">
+                                            <path
+                                                d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                                fill="#F8F8F8" />
+                                            <path
+                                                d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                                stroke="#EFC351" stroke-width="0.861705" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                                height="60.5324" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="0.888268" />
+                                                <feGaussianBlur stdDeviation="3.10894" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_35_1039" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_35_1039" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_35_1039)">
+                                            <path
+                                                d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                                fill="#F8F8F8" />
+                                            <path
+                                                d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                                stroke="#EFC351" stroke-width="0.861705" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                                height="60.5324" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="0.888268" />
+                                                <feGaussianBlur stdDeviation="3.10894" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_35_1039" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_35_1039" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_35_1039)">
+                                            <path
+                                                d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                                fill="#F8F8F8" />
+                                            <path
+                                                d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                                stroke="#EFC351" stroke-width="0.861705" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                                height="60.5324" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="0.888268" />
+                                                <feGaussianBlur stdDeviation="3.10894" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_35_1039" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_35_1039" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_35_1039)">
+                                            <path
+                                                d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                                fill="#F8F8F8" />
+                                            <path
+                                                d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                                stroke="#EFC351" stroke-width="0.861705" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                                height="60.5324" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dy="0.888268" />
+                                                <feGaussianBlur stdDeviation="3.10894" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_35_1039" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_35_1039" result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3>Цена в $ по вашему мнению</h3>
+                            <div class="calculate d-flex align-items-center justify-content-center">
+                                <button class="decrement">
+                                    <span>-</span>
+                                </button>
+                                <div class="result" default-price="30">30$</div>
+                                <button class="increment">
+                                    <span>+</span>
+                                </button>
+                            </div>
+                            <div class="evalutions text-center">
+                                <button class="btn btn-outline-none border-0">
+                                    оценить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container characteristic_footer d-flex align-item-stretch justify-content-between">
+                <div class="left">
+                    <img src="./images/warning_icon.svg" alt="" class="icon">
+                    <h1>Интересные факты</h1>
+                    <div class="datas">
+                        <div class="data">1.</div>
+                        <div class="value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia
+                            porta accumsan.</div>
+                    </div class="datas">
+                    <div class="datas">
+                        <div class="data">2.</div>
+                        <div class="value">Sed volutpat ipsum felis, vel pellentesque dui malesuada ac. Mauris sed
+                            aliquam tellus.</div>
+                    </div class="datas">
+                    <div class="datas">
+                        <div class="data">3.</div>
+                        <div class="value">Donec gravida pellentesque sem vel auctor. Nam sollicitudin fringilla nisi,
+                            sit amet hendrerit orci laoreet eget.</div>
+                    </div class="datas">
+                </div>
+                <div class="right">
+                    <img src="./images/book_icon.svg" alt="" class="icon">
+                    <h1>История марки</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia porta accumsan. Sed
+                        volutpat ipsum felis, vel pellentesque dui malesuada ac. Mauris sed aliquam tellus. Donec
+                        gravida pellentesque sem vel auctor. Nam sollicitudin fringilla nisi, sit amet hendrerit orci
+                        laoreet eget. Sed tempor lectus quam. Curabitur id porttitor enim. Integer egestas pulvinar nibh
+                        sed consequat. Donec id pulvinar diam. Nulla vitae nisl lorem.</p>
+                </div>
+            </div>
+
+            <div class="main_container mobile_calculation">
+                <div class="calculation">
+                    <h2>Оцените марку </h2>
+                    <div class="bnts_group">
+                        <button>
+                            <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_35_1039)">
+                                    <path
+                                        d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                        fill="#F8F8F8" />
+                                    <path
+                                        d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                        stroke="#EFC351" stroke-width="0.861705" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                        height="60.5324" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                            result="hardAlpha" />
+                                        <feOffset dy="0.888268" />
+                                        <feGaussianBlur stdDeviation="3.10894" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_35_1039" />
+                                        <feBlend mode="normal" in="SourceGraphic"
+                                            in2="effect1_dropShadow_35_1039" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_35_1039)">
+                                    <path
+                                        d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                        fill="#F8F8F8" />
+                                    <path
+                                        d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                        stroke="#EFC351" stroke-width="0.861705" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                        height="60.5324" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                            result="hardAlpha" />
+                                        <feOffset dy="0.888268" />
+                                        <feGaussianBlur stdDeviation="3.10894" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_35_1039" />
+                                        <feBlend mode="normal" in="SourceGraphic"
+                                            in2="effect1_dropShadow_35_1039" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_35_1039)">
+                                    <path
+                                        d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                        fill="#F8F8F8" />
+                                    <path
+                                        d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                        stroke="#EFC351" stroke-width="0.861705" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                        height="60.5324" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                            result="hardAlpha" />
+                                        <feOffset dy="0.888268" />
+                                        <feGaussianBlur stdDeviation="3.10894" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_35_1039" />
+                                        <feBlend mode="normal" in="SourceGraphic"
+                                            in2="effect1_dropShadow_35_1039" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_35_1039)">
+                                    <path
+                                        d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                        fill="#F8F8F8" />
+                                    <path
+                                        d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                        stroke="#EFC351" stroke-width="0.861705" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                        height="60.5324" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                            result="hardAlpha" />
+                                        <feOffset dy="0.888268" />
+                                        <feGaussianBlur stdDeviation="3.10894" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_35_1039" />
+                                        <feBlend mode="normal" in="SourceGraphic"
+                                            in2="effect1_dropShadow_35_1039" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg width="63" height="62" viewBox="0 0 63 62" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_35_1039)">
+                                    <path
+                                        d="M30.2255 6.93866C30.6124 5.74781 32.2972 5.74781 32.6841 6.93865L37.7513 22.5339C37.9243 23.0665 38.4206 23.4271 38.9806 23.4271H55.3784C56.6306 23.4271 57.1512 25.0293 56.1382 25.7653L42.8721 35.4037C42.419 35.7329 42.2295 36.3163 42.4025 36.8489L47.4697 52.4441C47.8566 53.635 46.4937 54.6252 45.4807 53.8892L32.2145 44.2508C31.7615 43.9217 31.1481 43.9217 30.695 44.2508L17.4289 53.8892C16.4159 54.6252 15.0529 53.635 15.4399 52.4441L20.5071 36.8489C20.6801 36.3163 20.4906 35.7329 20.0375 35.4037L6.77141 25.7653C5.75842 25.0293 6.27902 23.4271 7.53116 23.4271H23.929C24.489 23.4271 24.9852 23.0665 25.1583 22.5339L30.2255 6.93866Z"
+                                        fill="#F8F8F8" />
+                                    <path
+                                        d="M30.6353 7.0718C30.8932 6.2779 32.0164 6.2779 32.2743 7.0718L37.3415 22.6671C37.5723 23.3772 38.234 23.8579 38.9806 23.8579H55.3784C56.2132 23.8579 56.5603 24.9261 55.8849 25.4168L42.6188 35.0552C42.0148 35.494 41.762 36.2719 41.9927 36.982L47.0599 52.5773C47.3179 53.3712 46.4093 54.0313 45.7339 53.5407L32.4678 43.9023C31.8638 43.4634 31.0458 43.4634 30.4418 43.9023L17.1757 53.5407C16.5003 54.0313 15.5917 53.3712 15.8496 52.5773L20.9169 36.982C21.1476 36.2719 20.8948 35.494 20.2908 35.0552L7.02466 25.4168C6.34933 24.9261 6.6964 23.8579 7.53116 23.8579H23.929C24.6756 23.8579 25.3373 23.3772 25.5681 22.6671L30.6353 7.0718Z"
+                                        stroke="#EFC351" stroke-width="0.861705" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_35_1039" x="0.0184507" y="0.715801" width="62.8733"
+                                        height="60.5324" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                            result="hardAlpha" />
+                                        <feOffset dy="0.888268" />
+                                        <feGaussianBlur stdDeviation="3.10894" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_35_1039" />
+                                        <feBlend mode="normal" in="SourceGraphic"
+                                            in2="effect1_dropShadow_35_1039" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Цена в $ по вашему мнению</h3>
+                    <div class="calculate d-flex align-items-center justify-content-center">
+                        <button class="decrement">
+                            <span>-</span>
+                        </button>
+                        <div class="result" default-price="30">30$</div>
+                        <button class="increment">
+                            <span>+</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container link">
+                <a class="text-decoration-none" href="#">Нашли ошибку ?</a>
+            </div>
+        </section>
+        <!-- Characteristic end -->
+
+        <!-- Brands start -->
+        <section id="brands">
+            <div class="main_container title">
+                <h1>Похожие марки</h1>
+            </div>
+            <div class="brands_wrapper">
+                <div class="main_container brands_slider d-flex align-items-center justify-content-between">
+                    <button class="brand_prev_button bg-transparent border-0 btn-outline-none">
+                        <img src="./images/prev_button.svg" alt="">
+                    </button>
+                    <div class="slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_1.png" alt="">
+                                <h3>Джордж Вашингтон 2 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_2.png" alt="">
+                                <h3>Джордж Вашингтон 1 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_3.png" alt="">
+                                <h3>Джордж Вашингтон 1 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_4.png" alt="">
+                                <h3>Статуя свободы 1992г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_1.png" alt="">
+                                <h3>Джордж Вашингтон 2 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_2.png" alt="">
+                                <h3>Джордж Вашингтон 1 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_3.png" alt="">
+                                <h3>Джордж Вашингтон 1 cents, 1883г</h3>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/brand_slider_4.png" alt="">
+                                <h3>Статуя свободы 1992г</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="brand_next_button bg-transparent btn-outline-none border-0">
+                        <img src="./images/next_button.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Brands end -->
+    </div>
+    <div class="albums">
+        <div class="main_container">
+            <div class="albums_comment_title">
+                <h5>Обсуждение марки «Джордж Вашингтон, 1732-1799» </h5>
+                <h3>8 комментариев</h3>
+            </div>
+            <div class="albums_comments">
+                <div class="albums_comment_card">
+                    <div class="albums_comment_card_top">
+                        <img src="./images/albums_comment_person.svg" alt="">
+                        <h4>Tanyusha33<span>4 часа назад</span></h4>
+                        <span>4 часа назад</span>
+                        <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg"
+                                alt="">Ответить</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+                <div class="albums_comment_card">
+                    <div class="albums_comment_card_top">
+                        <img src="./images/albums_comment_person2.svg" alt="">
+                        <h4>Collectioner01<span>12 часов назад</span></h4>
+                        <span>12 часов назад</span>
+                        <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg"
+                                alt="">Ответить</button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate</p>
+                </div>
+                <div class="albums_comment_card_by">
+                    <div class="albums_comment_card_my">
+                        <div class="albums_comment_card_top">
+                            <img src="./images/albums_comment_person3.svg" alt="">
+                            <h4>Vlad_G<span>3 дня назад</span></h4>
+                            <span>3 дня назад</span>
+                            <button class="albums_btn" type="button"><img src="./images/albums_comment_icon.svg"
+                                    alt="">Ответить</button>
+                        </div>
+                        <p><b>@Collectioner01</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit.</p>
+                    </div>
+                    <div class="albums_comment_card_my">
+                        <div class="albums_comment_card_top">
+                            <img src="./images/albums_comment_person4.svg" alt="">
+                            <h4>Andrew_S<span>2 дня назад</span></h4>
+                            <img src="./images/albums_comment_by_icon.svg" alt="">
+                            <span>2 дня назад</span>
+                            <button class="albums_btn1" type="button"><img src="./images/albums_delete_icon.svg"
+                                    alt="">Удалить</button>
+                            <button class="albums_btn2" type="button"><img src="./images/albums_comment_edit.svg"
+                                    alt="">Изменить</button>
+                        </div>
+                        <p><b>@Collectioner01</b> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit.</p>
+                    </div>
+                </div>
+                <div class="albums_form">
+                    <a class="albums_full_btn" href="#">Все комментарии <img src="./images/albums_comment_full.svg"
+                            alt=""></a>
+                    <form class="albums_form_btn">
+                        <div class="albums_form_input">
+                            <img src="./images/albums_comment_person4.svg" alt="">
+                            <textarea placeholder="Написать комментарий"></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer start -->
+    <footer>
+        <div class="main_container">
+            <div class="footer_wrapper">
+                <a class="footer_logo text-decoration-none" href="index.html">
+                    <img src="./images/footer_logo.svg" alt="">
+                </a>
+                <ul class="pt-3">
+                    <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                    <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                    <li><a class="text-decoration-none" href="#">Новости</a></li>
+                    <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                    <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_menu">Найти марки:</li>
+                    <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                    <li><a class="text-decoration-none" href="#">по годам</a></li>
+                    <li><a class="text-decoration-none" href="#">по темам</a></li>
+                    <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                </ul>
+                <div class="footer_social">
+                    <p class="footer_text">Подпишитесь на новости коллекции и интересную информацию</p>
+                    <form>
+                        <div class="form_in">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </div>
+                    </form>
+                    <div class="footer_social_in">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                        <div class="footer_social_email">
+                            <p>По всем вопросам</p>
+                            <a class="text-decoration-none"
+                                href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+            <div class="footer_wrapper_media">
+                <div class="footer_top_media">
+                    <a class="text-decoration-none" href="index.html">
+                        <img src="./images/footer_logo.svg" alt="">
+                    </a>
+                    <div class="footer_email">
+                        <p>Подпишитесь на новости коллекции и интересную информацию</p>
+                        <div class="email_wrapper">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button class="footer_media_btn" type="submit">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_center_media">
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">коллекция</a></li>
+                        <li><a class="text-decoration-none" href="#">Подборки</a></li>
+                        <li><a class="text-decoration-none" href="#">Новости</a></li>
+                        <li><a class="text-decoration-none" href="#">Статьи</a></li>
+                        <li><a class="text-decoration-none" href="#">обратная связь</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_menu_media">Найти марки:</li>
+                        <li><a class="text-decoration-none" href="#">по странам и регионам</a></li>
+                        <li><a class="text-decoration-none" href="#">по годам</a></li>
+                        <li><a class="text-decoration-none" href="#">по темам</a></li>
+                        <li><a class="text-decoration-none" href="#">по альбомам</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_media">
+                    <div class="social_media_footer">
+                        <a class="text-decoration-none" href="#"><img src="./images/youtube_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/vkontak_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/instagram_icon.svg" alt=""></a>
+                        <a class="text-decoration-none" href="#"><img src="./images/r_icon.svg" alt=""></a>
+                    </div>
+                    <div class="footer_social_email_media">
+                        <p class="footer_media_text">По всем вопросам</p>
+                        <a class="text-decoration-none" href="mailto:StampsC_info@gmail.com">StampsC_info@gmail.com</a>
+                    </div>
+                </div>
+                <p class="footer_media_bottom_in">© Stamps-collection.ru, 2023. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/swipper.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        var swiper = new Swiper(".anons_slider .slider", {
+            direction: "vertical",
+            slidesPerView: 5,
+            spaceBetween: 14,
+            loop: true,
+            navigation: {
+                prevEl: ".next_button button",
+            }
+        });
+
+        var swiper = new Swiper(".mobile_anons_slider .slider", {
+            slidesPerView: 5,
+            spaceBetween: 7,
+            loop: true,
+            navigation: {
+                nextEl: ".next_button button",
+            }
+        });
+
+        var swiper = new Swiper(".brands_slider .slider", {
+            slidesPerView: 4,
+            spaceBetween: 8,
+            loop: true,
+            breakpoints: {
+                1450: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+                850: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                }
+            },
+            navigation: {
+                nextEl: ".brand_next_button",
+                prevEl: ".brand_prev_button",
+            },
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
